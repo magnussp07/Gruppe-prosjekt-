@@ -21,3 +21,44 @@ html {
     max-width: 100%;
     height: auto;
   }
+
+  header {
+    background-color: lime;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imggrid{
+    display: grid;
+    height: calc(100vh - 80px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    
+  }
+
+  .gridimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #bilde1{
+    grid-column: span 2;
+  }
+  
+  #bilde2{
+    grid-row: span 2;
+  }
+
+  #bilde3{
+    grid-row: span 2;
+  }
