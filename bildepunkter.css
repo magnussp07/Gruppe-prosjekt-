@@ -1,0 +1,15 @@
+.pixel_container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    gap:10px;
+    width: fit-content;
+    height: fit-content;
+    
+
+    
+}
+
+.pixel_container > div{
+    background-color: black;
+}
