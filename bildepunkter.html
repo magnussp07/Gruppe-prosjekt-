@@ -11,13 +11,20 @@
         function bytt_farge(x){
 
             if (document.getElementById(x).style.backgroundColor == "white") {
+            document.getElementById(x).style.display = "flex"
+            document.getElementById(x).style.justifyContent = "center"
+            document.getElementById(x).style.alignItems = "center"
             document.getElementById(x).innerHTML = "1"
             document.getElementById(x).style.backgroundColor = "black"
             document.getElementById(x).style.color = "white"
             } else{
+            document.getElementById(x).style.display = "flex"
+            document.getElementById(x).style.justifyContent = "center"
+            document.getElementById(x).style.alignItems = "center"
             document.getElementById(x).innerHTML = "0"
             document.getElementById(x).style.backgroundColor = "white"
             document.getElementById(x).style.color = "black"
+            
 
             }
             
