@@ -23,10 +23,14 @@ html {
   }
 
   header {
-    background-color: lime;
+    background-color:none ;
     height: 80px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    color: white;
 
   }
 
@@ -35,13 +39,16 @@ html {
     width: 50%;
     justify-content: space-between;
     align-items: center;
+    
+
   }
 
   .imggrid{
     display: grid;
-    height: calc(100vh - 80px);
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    grid-template-columns: 300px 1fr 300px;
     grid-template-rows: 33% 33% 33%;
+    gap: 2px;
     
   }
 
@@ -52,13 +59,19 @@ html {
   }
 
   #bilde1{
-    grid-column: span 2;
+    grid-row:span 2 ;
   }
   
   #bilde2{
     grid-row: span 2;
+    grid-column: span 2;
   }
 
   #bilde3{
-    grid-row: span 2;
+    grid-column: span 2;
   }
+
+  .imggrid img{
+    ;
+  }
+

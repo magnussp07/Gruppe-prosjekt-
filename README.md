@@ -1,2 +1,2 @@
 # Gruppe-prosjekt 
- Magnus, Martin og Oskar
+ Magnus, Martin og Oscar
