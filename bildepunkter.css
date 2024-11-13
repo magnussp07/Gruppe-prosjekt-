@@ -1,16 +1,44 @@
+
+header {
+    background-color:none ;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    color: black;
+    z-index: 1000;
+
+}
+
+nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
 .pixel_container{
+    
     display: grid;
     grid-template-columns: 75px 75px 75px 75px 75px 75px ;
     grid-template-rows: 75px 75px 75px 75px 75px 75px ;
     gap:10px;
     width: fit-content;
     height: fit-content;
+    margin: auto;
+    
     
 
     
 }
 
 .pixel_container > div{
+    
     background-color: black;
     color: white;
     display: flex;
