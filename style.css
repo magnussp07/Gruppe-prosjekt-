@@ -31,6 +31,7 @@ html {
     width: 100%;
     top: 0px;
     color: white;
+    z-index: 1000;
 
   }
 
@@ -43,35 +44,29 @@ html {
 
   }
 
-  .imggrid{
-    display: grid;
+  .background{
     height: 100vh;
-    grid-template-columns: 300px 1fr 300px;
-    grid-template-rows: 33% 33% 33%;
-    gap: 2px;
-    
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
-  .gridimg{
+  .backimg{
     height: 100%;
     width: 100%;
-    object-fit: cover;
   }
 
-  #bilde1{
-    grid-row:span 2 ;
+  .overlay{
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 100;
   }
+
+  main{
+    position: relative;
+  }
+
   
-  #bilde2{
-    grid-row: span 2;
-    grid-column: span 2;
-  }
-
-  #bilde3{
-    grid-column: span 2;
-  }
-
-  .imggrid img{
-    ;
-  }
-
