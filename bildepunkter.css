@@ -1,7 +1,60 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    margin:0;
+}
+
+header{
+    grid-column:1/4 ;
+}
+
+
+main{
+    grid-column: 1/3;
+
+    display: grid;
+    grid-template-columns: 29% 5% 29% 5% 29%;
+    grid-template-rows: 120px 80px 250px;
+    justify-content: center;
+    align-content: center;
+    
+    gap:3px;
+    
+}
+
+main > *{
+    background-color: chartreuse;
+    z-index: 10;
+}
+
+
+#space1{
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+#space2{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+#overskrift{
+    grid-column: 2/5;
+}
+
+#overskrift, .under-overskrift{
+    color: black;
+    justify-content: center;
+    display:flex;
+}
+
+
 
 header {
     background-color:none ;
-    height: 80px;
+    height: 100%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -10,6 +63,10 @@ header {
     color: black;
     z-index: 1000;
 
+}
+
+footer{
+    grid-column: 1/4;
 }
 
 nav{
@@ -21,16 +78,22 @@ nav{
 
 }
 
+.bildepunkter-side > *{
+    background-color: blueviolet;
+}
 
 .pixel_container{
     
     display: grid;
-    grid-template-columns: 75px 75px 75px 75px 75px 75px ;
-    grid-template-rows: 75px 75px 75px 75px 75px 75px ;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px ;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px ;
     gap:10px;
-    width: fit-content;
-    height: fit-content;
+    width:100%;
+    height:100%;
     margin: auto;
+    justify-content: center;
+    align-content: center;
+    
     
     
 
@@ -45,4 +108,15 @@ nav{
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif   ;
     align-items: center;
+}
+
+.bildepunkter-side{
+
+    display: grid;
+    grid-template-columns: 33vw 34vw 33vw;
+    grid-template-rows: 15vh 70vh 15vh;
+    width: 100vw;
+    height: 100vh;
+    gap: 5px;
+
 }
