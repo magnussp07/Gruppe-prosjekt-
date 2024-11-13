@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -5,12 +9,18 @@ html {
   
   *, *:before, *:after {
     box-sizing: inherit;
+    font-family: "Quicksand";
   }
   
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
   }
   
   ol, ul {
@@ -69,4 +79,44 @@ html {
     position: relative;
   }
 
-  
+  .tekst{
+    height: 50%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 10000;
+    top: 30%;
+    left: 25%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid white;
+
+  }
+
+  .tekst p{
+    color: white;
+    opacity: 1;
+    font-size: 40px;
+    font-weight: 500;
+
+  }
+
+  .navitem{
+    padding: 10px;
+    transition: all 0.5s;
+  }
+
+
+
+
+  .navitem:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    
+    
+  }
