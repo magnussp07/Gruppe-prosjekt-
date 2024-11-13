@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+body{
+    text-align: center;
+}
+header {
+    background-color:none ;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+
+  }
+
+  nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  }
+
+  h1{
+    display: grid;
+  }
