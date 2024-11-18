@@ -111,6 +111,8 @@ html {
     transform: translate(-50%, -50%);
     color: black;
     text-align: center;
+    height: fit-content;
+    width: 500px;
 
   }
   .tekst h1{
