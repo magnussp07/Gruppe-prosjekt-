@@ -31,8 +31,8 @@ html {
 
   body{
     display: grid;
-    grid-template-rows:80px 1fr;
-    grid-template-columns: 1fr 30%;
+    grid-template-rows:80px 1fr 100px;
+    grid-template-columns: 1fr 40%;
     height: 100vh;
     
   }
@@ -64,7 +64,7 @@ html {
   }
 
   footer{
-    background-color: var(--columbia-blue);
+    background-color: var(--cool-blue);
     grid-column: span 2;
   }
 
@@ -120,3 +120,75 @@ html {
   #o2{
     margin-top: 250px;
   }
+
+  .red{
+    color: red;
+    display: inline-block
+  }
+
+  .green{
+    color: green;
+    display: inline-block;
+  }
+
+  .blue{
+    color: blue;
+    display: inline-block
+  }
+
+  .cyan{
+    color: cyan;
+    display: inline-block;
+  }
+
+  .magenta{
+    color: magenta;
+    display: inline-block;
+  }
+
+  .yellow{
+    color: yellow;
+    display: inline-block;
+  }
+
+  .black{
+    color: black;
+    display: inline-block;
+  }
+
+ p .avsnitt{
+  display: flex;
+  width: auto;
+ }
+
+ #avsnitt2{
+  background-color: var(--cool-gray);
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 40px;
+ }
+
+ .rgb{
+  position: relative;
+  top: 32%;
+  right: 20px;
+  padding: 10px;
+  background-color: var(--ebony);
+  border-radius: 10px;
+  
+  
+ }
+
+ .navitem:hover{
+  color: white;
+ }
+
+ .avcont{
+  display: flex;
+  gap: 20px;
+ }
+
+ .rgbt{
+
+ }
+
