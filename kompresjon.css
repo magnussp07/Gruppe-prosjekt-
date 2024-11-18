@@ -1,46 +1,24 @@
-body{
-    background-color: var(--cool-blue);
-   
-    
-}
+ 
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    height: 100vh;
-    margin-top: 100px;
-}
+ .tapav{
 
-.top{
-    grid-column: span 2;
+ }
+
+ .cont{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
+    gap: 10px;
+ }
 
-header{
-    z-index: 10000000;
-    background-color: var(--cool-blue);
-}
+ .rgb{
+    height: 350px;
+ }
 
-.overskrift{
-    font-size: 40px;
-    margin-top: 10px;
-}
+ @media (max-width:920px){
+    .octo{
+        display: none;
+    }
 
-.lossy{
-    height: 300px;
-    margin-top: 30px;
-    padding: 10px;
-    background-color: var(--ebony);
-    border-radius: 10px;
-}
-
-.top p{
-    margin-top: 10px;
-    width: 75%;
-    font-size: 17px;
-}
+    .rgb{
+        width: 85%;
+    }
+ }

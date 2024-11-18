@@ -203,3 +203,11 @@ nav{
     background-color: var(--cool-blue);
     
 }
+
+
+@media (max-width:830px){
+    nav{
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }

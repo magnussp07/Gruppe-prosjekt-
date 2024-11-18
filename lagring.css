@@ -133,3 +133,10 @@ html {
     font-size: smaller;
   }
 }
+
+@media (max-width:830px){
+  nav{
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
