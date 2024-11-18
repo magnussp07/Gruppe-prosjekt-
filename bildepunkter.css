@@ -26,25 +26,26 @@ main{
 
     display: grid;
     grid-template-columns: 29% 5% 29% 5% 29%;
-    grid-template-rows: 120px 80px 250px;
+    grid-template-rows: 20% 10% 70%;
     justify-content: center;
     align-content: center;
     
     gap:3px;
 
     background-color: var(--cool-blue);
-    border: black 2px 
+    border: black 2px solid;
     
 }
 
 main > *{
-    background-color: ;
+   
     z-index: 10;
+    border: black 1px dashed
 }
 
 .bp-tekst{
-    background-color: orange;
-    height: fit-content;
+    
+    
 }
 
 .bp-tekst > p{
@@ -147,4 +148,5 @@ nav{
 
 .bildepunkter-side > *{
     background-color: var(--cool-blue);
+    
 }
