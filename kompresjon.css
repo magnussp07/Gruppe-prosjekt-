@@ -8,7 +8,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr 1fr;
-    height: 100vh;
+    
     margin-top: 100px;
 }
 
@@ -43,4 +43,34 @@ header{
     margin-top: 10px;
     width: 75%;
     font-size: 17px;
+}
+
+.tapsfri{
+    height: 00px;
+}
+
+.middle{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#lossyO{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.avsnitt{
+    font-size: 20px;
+}
+
+.file{
+    width: 600px;
+    padding: 10px;
+    background-color: var(--ebony);
+    border-radius: 10px;
+    position: relative;
+    top: 15%;
 }
