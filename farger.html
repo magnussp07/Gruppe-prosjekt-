@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="farger.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fargepalett.css">
+    
 </head>
 <body>
     <header>
@@ -43,12 +44,29 @@
                 Noe av det viktigste i et bilde er farger. Fargene i bildet er med på gi liv og karakter til bildet. I dag er det nesten utenkelig å ha et bilde uten farger, men hvordan vises egentlig fargene digitalt?
             </p>
         </div>
+        
+        <div class="knappwrap">
+            <button id="knapp">
+                Klikk her for farger!
+            </button>
+        </div>
+        <div class="overskrift" id="o2">
+            RGB og CMYK
+        </div>
     </section>
     <aside>
-        <img class="octo" src="Gruppebilder/octopus-8562474_1280.jpg" alt="">
+        <img class="octo grayscale" id="octimg" src="Gruppebilder/octopus-8562474_1280.jpg" alt="">
     </aside>
     <footer>
 
     </footer>
+
+
+    <script>
+        document.getElementById("knapp").addEventListener("click", function() {
+            const element = document.getElementById("octimg");
+            element.classList.toggle("grayscale")
+        })
+    </script>
 </body>
 </html>
