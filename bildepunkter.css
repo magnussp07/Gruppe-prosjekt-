@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --svart: #04151f;
+    --ebony: #6a7062;
+    --cool-gray: #8d909b;
+    --cool-blue: #aaadc4;
+    --columbia-blue: #d6eeff;
+}
+
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Quicksand";
 }
 
 body{
@@ -21,14 +31,27 @@ main{
     align-content: center;
     
     gap:3px;
+
+    background-color: var(--cool-blue);
+    border: black 2px 
     
 }
 
 main > *{
-    background-color: chartreuse;
+    background-color: ;
     z-index: 10;
 }
 
+.bp-tekst{
+    background-color: orange;
+    height: fit-content;
+}
+
+.bp-tekst > p{
+    font-size: 15px;
+    margin: 10px;
+    height: 90%
+}
 
 #space1{
     grid-row: 2/4;
@@ -62,11 +85,13 @@ header {
     top: 0px;
     color: black;
     z-index: 1000;
+    
 
 }
 
 footer{
     grid-column: 1/4;
+    
 }
 
 nav{
@@ -78,9 +103,7 @@ nav{
 
 }
 
-.bildepunkter-side > *{
-    background-color: blueviolet;
-}
+
 
 .pixel_container{
     
@@ -93,6 +116,7 @@ nav{
     margin: auto;
     justify-content: center;
     align-content: center;
+    
     
     
     
@@ -113,10 +137,14 @@ nav{
 .bildepunkter-side{
 
     display: grid;
-    grid-template-columns: 33vw 34vw 33vw;
-    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 15% 70% 15%;
     width: 100vw;
     height: 100vh;
-    gap: 5px;
+    gap: 0px;
 
+}
+
+.bildepunkter-side > *{
+    background-color: var(--cool-blue);
 }
