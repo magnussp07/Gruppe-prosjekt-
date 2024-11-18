@@ -51,6 +51,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   body header{
@@ -83,5 +84,39 @@ html {
     margin-right: 30px;
     padding: 10px;
     background-color: var(--ebony);
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    
+  }
+
+  #knapp{
+    margin-top: 0px;
+  }
+
+  .grayscale{
     filter: grayscale();
+  }
+
+  #knapp{
+    height: 70px;
+    background-color: var(--columbia-blue);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .knappwrap{
+    height: 60px;
+    background-color: var(--);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 50%;
+  }
+
+  #o2{
+    margin-top: 250px;
   }
