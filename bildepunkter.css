@@ -64,6 +64,7 @@ a{
 body{
     margin:0;
     background-color: var(--cool-blue);
+    width: 100vw;
     
 }
 
@@ -226,9 +227,7 @@ main > *{
         grid-template-rows: 10% 10% 80%;
     }
 
-    .pixel_container{
-        grid-column: 1/3;
-    }
+
 
     #pixelEks{
         grid-column: 1/4;
@@ -243,7 +242,8 @@ main > *{
     }
 
     .pixel_container{
-    
+        grid-column: 1/¤;
+
         grid-template-columns: 1cm 1cm 1cm 1cm 1cm 1cm ;
         grid-template-rows: 1cm 1cm 1cm 1cm 1cm 1cm ;
     
