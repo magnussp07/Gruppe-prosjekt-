@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompresjon</title>
+    <link rel="stylesheet" href="farger.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fargepalett.css">
+    <link rel="stylesheet" href="kompresjon.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="bildepunkter.html">
+                <div class="navitem">
+                    Bildepunkter
+                </div>
+            </a>
+            <a href="farger.html">
+                <div class="navitem">
+                    Farger
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="navitem">
+                    Hjem
+                </div>
+            </a>
+            <a href="lagring.html">
+                <div class="navitem">
+                    Lagring
+                </div>
+            </a>
+        </nav>
+    </header>
+    <section>
+        <div class="overskrift">
+            Kompresjon
+        </div>
+        
+        <div class="avsnitt">
+            <p>
+                Bilder og annen media tar stor plass på en datamaskin. Hver piksel i et fargebilde krever tre tall for å vise farge (RGB). For å produsere bildet digitalt må datamaskinen da lagre tre tall for hver eneste piksel. Men om man komprimerer bildet, kan man minimere antall tall datamaskinen trenger å lagre. Det er to hovedmetoder, tapsfri og destruktiv kompresjon.
+            </p>
+        </div>
+        
+        
+        <div class="overskrift" id="o2">
+            Tapsfri kompresjon
+        </div>
+        <div class="avsnitt" id="avsnitt2">
+            
+                Tapsfri og  destruktiv ( Lossless og lossy ), kompresjon er de vanligste hovedformene for kompresjon.
+            
+        </div>
+        <div class="avcont">
+            <div class="rgbt">
+                Tapsfri kompresjon vil si å komprimere bildet uten å ødelegge eller endre på bildekvaliteten. Dette gjøres ved å optimalisere måten fargene lagres på. Istedet for å lagre fire hvite piksler slik : (255 255 255) (255 255 255) (255 255 255) (255 255 255), gjøres det slik 4*(255 255 255)
+            </div>
+                <div class="cmykt">
+                Destruktiv kompresjon vil si å komprimere bildet enda mer enn ved tapsfri kompresjon, men ved å ofre bildekvaliteten. Dette gjøres ved å sammensmelte bildepunkter som likner i fargen, og vil være vanskelig for det menneskelige øyet å oppdage. Men hvis man gjør dette for mye vil man se den dårligere kvaliteten med det blotte øyet.
+            </div>  
+        </div>
+    </section>
+    <aside>
+        <img class="octo" src="Gruppebilder/compression.jpg" alt="">
+        <img class="rgb" src="Gruppebilder/filesize.jpg" alt="">
+    </aside>
+    <footer>
+
+    </footer>
+
+
+    
+</body>
+</html>

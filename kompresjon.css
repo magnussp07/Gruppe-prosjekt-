@@ -1,0 +1,24 @@
+ 
+
+ .tapav{
+
+ }
+
+ .cont{
+    display: flex;
+    gap: 10px;
+ }
+
+ .rgb{
+    height: 350px;
+ }
+
+ @media (max-width:920px){
+    .octo{
+        display: none;
+    }
+
+    .rgb{
+        width: 85%;
+    }
+ }

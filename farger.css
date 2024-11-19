@@ -188,7 +188,62 @@ html {
   gap: 20px;
  }
 
- .rgbt{
-
+ @media (min-width: 1080px) {
+    #knapp{
+      width: 200px;
+    }
  }
 
+ @media (max-width:1000px){
+  section{
+    grid-column: span 2;
+  }
+  .octo,
+  .rgb{
+    position: static;
+    
+  }
+
+  aside{
+    
+    width: 100%;
+  }
+
+  body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+  }
+
+  .octo{
+    height: 300px;
+    filter: none;
+
+  }
+
+  .rgb{
+    width: 50%;
+  }
+
+  .knappwrap{
+    margin-top: 40px;
+  }
+
+  #knapp{
+    display: none;
+  }
+  #o2{
+    margin-top: 100px;
+  }
+ }
+
+ 
+
+ @media (max-width:600px){
+  .octo{
+    display: none;
+  }
+
+  .rgb{
+    width: 85%;
+  }
+ }
