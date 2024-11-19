@@ -128,8 +128,15 @@ html {
 
 @media (max-width: 1080px) {
   .tekst{
+    text-align: center;
+    height: 500px;
     width: fit-content;
-    height: fit-content;
-    font-size: smaller;
+  }
+  .tekst h1{
+    font-size: 1.5em;
+  }
+  .tekst p{
+    font-size: 1em;
+    width: fit-content;
   }
 }
