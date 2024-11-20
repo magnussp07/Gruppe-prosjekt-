@@ -3,147 +3,186 @@
 
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Quicksand";
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: var(--cool-blue);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1000;
+  color: black;
+
+}
+
+nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backimg {
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.overlay {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 100;
+}
+
+main {
+  position: relative;
+  grid-column: 1;
+}
+
+.navitem {
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+
+
+
+.navitem:hover {
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  color: white;
+
+
+}
+
+aside {
+  background-color: var(--cool-blue);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.tekst {
+  position: absolute;
   
-  *, *:before, *:after {
-    box-sizing: inherit;
-    font-family: "Quicksand";
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  body{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+  top: 100px;
+  color: black;
+  text-align: center;
+  height: fit-content;
+  width: 500px;
 
-  a{
-    color: black;
-    text-decoration: none;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+}
 
-  header {
-    background-color:white ;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 1000;
-    color: black;
+.tekst h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-  }
-
-  nav{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .background{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-
-  .backimg{
-    height: 100%;
-    object-fit: cover;
-    object-position: left;
-  }
-
-  .overlay{
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    z-index: 100;
-  }
-
-  main{
-    position: relative;
-    grid-column: 1;
-  }
-
-  .navitem{
-    padding: 10px;
-    transition: all 0.5s;
-  }
-
-
-
-
-  .navitem:hover{
-    border: 1px solid var(--svart);
-    border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-weight: 500;
-    
-    
-  }
-  aside{
-    grid-column: 2;
-    background-color: var(--cool-blue);
-    position: relative;
-  }
-  .tekst{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    text-align: center;
-    height: fit-content;
-    width: 500px;
-    
-  }
-  .tekst h1{
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-
-  .tekst p{
-    font-size: 1.2em;
-    font-weight: 400;
-  }
+.tekst p {
+  font-size: 1.1em;
+  font-weight: 400;
+}
 
 @media (max-width: 1080px) {
-  .tekst{
+  .tekst {
     text-align: center;
     height: 500px;
     width: fit-content;
   }
-  .tekst h1{
+
+  .tekst h1 {
     font-size: 1.5em;
   }
-  .tekst p{
+
+  .tekst p {
     font-size: 1em;
     width: fit-content;
   }
 }
 
-@media (max-width:830px){
-  nav{
+@media (max-width:830px) {
+  nav {
     justify-content: space-evenly;
     width: 100%;
+  }
+}
+
+@media (max-width:600px) {
+  .tekst p {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width:500px) {
+  .tekst p {
+    font-size: 12px;
+    padding: 12px;
   }
 }
