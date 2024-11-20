@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="farger.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fargepalett.css">
-    
+
 </head>
+
 <body>
     <header>
         <nav>
@@ -38,32 +40,36 @@
         <div class="overskrift">
             Farger
         </div>
-        
+
         <div class="avsnitt">
             <p>
-                Noe av det viktigste i et bilde er farger. Fargene i bildet er med på gi liv og karakter til bildet. I dag er det nesten utenkelig å ha et bilde uten farger, men hvordan vises egentlig fargene digitalt?
+                Noe av det viktigste i et bilde er farger. Fargene i bildet er med på gi liv og karakter til bildet. I
+                dag er det nesten utenkelig å ha et bilde uten farger, men hvordan vises egentlig fargene digitalt?
             </p>
         </div>
-        
+
         <div class="knappwrap">
-            <button id="knapp">
-                Klikk her for farger!
-            </button>
+            <button id="knapp" onclick="farger()">Klikk her for farger!</button>
         </div>
         <div class="overskrift" id="o2">
             RGB og CMYK
         </div>
         <div class="avsnitt" id="avsnitt2">
-            
-                RGB (<span class="red">Red</span> <span class="green">Green</span> <span class="blue">Blue</span>) og CMYK ( <span class="cyan">Cyan</span> <span class="magenta">Magenta</span> <span class="yellow">Yellow</span> <span class="black">blacK</span> ) er to forskjellige måter å fremstille farger på.
-            
+
+            RGB (<span class="red">Red</span> <span class="green">Green</span> <span class="blue">Blue</span>) og CMYK (
+            <span class="cyan">Cyan</span> <span class="magenta">Magenta</span> <span class="yellow">Yellow</span> <span
+                class="black">blacK</span> ) er to forskjellige måter å fremstille farger på.
+
         </div>
         <div class="avcont">
             <div class="rgbt">
-                RGB er den som er vanligst på digitiale skjermer, og bruker såkalt "Additive color synthesis" Dette vil si at fargene legges til hverandre, og at fargen blir lysere desto mer farger det er.
+                RGB er den som er vanligst på digitiale skjermer, og bruker såkalt "Additive color synthesis" Dette vil
+                si at fargene legges til hverandre, og at fargen blir lysere desto mer farger det er.
             </div>
             <div class="cmykt">
-                CMYK er på mange måter motsatt, fargene tas fra hverandre med "Subtractive color synthesis", og desto flere farger som legges oppå hverandre, desto mørkere blir det. CMYK brukes med blekk og maling, og andre pigment-baserte fargemetoder.
+                CMYK er på mange måter motsatt, fargene tas fra hverandre med "Subtractive color synthesis", og desto
+                flere farger som legges oppå hverandre, desto mørkere blir det. CMYK brukes med blekk og maling, og
+                andre pigment-baserte fargemetoder.
             </div>
         </div>
     </section>
@@ -77,10 +83,11 @@
 
 
     <script>
-        document.getElementById("knapp").addEventListener("click", function() {
+        function farger() {
             const element = document.getElementById("octimg");
-            element.classList.toggle("grayscale")
-        })
+            element.classList.toggle("grayscale");
+        }
     </script>
 </body>
+
 </html>
